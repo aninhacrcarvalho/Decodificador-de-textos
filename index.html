@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador de texto</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="codificar">
+        <textarea
+          name="texto"
+          class="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Escreva seu texto aqui"
+        ></textarea>
+
+        <div class="termos">
+          <p>Somente letras minusculas e sem acentos.</p>
+        </div>
+        <div class="botoes">
+          <button class="btn-codificar" type="button" onclick="codificar()">
+            Codificar
+          </button>
+          <input
+            type="button"
+            class="btn-decodificar"
+            value="Decodificar"
+            onclick="decodificar()"
+          />
+        </div>
+      </div>
+      <div class="codificado">
+        <img src="img/pesquisa.png" alt="" id="boneco" />
+        <div class="mensagem-codificada" id="mensagem-codificar">
+          <h2 id="titulo-mensagem">Nenhuma mensagem foi encontrada</h2>
+          <p id="paragrafo">
+            Escreva o texto que deseja codificar ou decodificar
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
